@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${5:Document}</title>
+</head>
+<body>
+	<ons-page>
+   <ons-toolbar>
+   <div class="left">
+    <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+</div>
+<div class="center">Daily Lab Analysis Report</div>
+</ons-toolbar> 
+<ons-row>
+<form id='degreasinglab'>
+    <div class="report"><h4>1. Degreasing Solution</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+          <tr>
+             <th>Tank Number</th>
+             <th>Ambient Temperature (C)</th>
+             <th>Ph 2-3</th>
+             <th>Concentration 5-10%</th>
+             <th>Add Solution</th>
+             <th>Replace Tank</th>
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="1"></td>
+          <input type="hidden" name="tank_no" value="1">
+          <input type="hidden" name="stage" value="dgr">
+          <td><input type="text" name="temp"></td>
+          <td><input type="text" name="ph"></td>
+          <td><input type="text" name="concentration"></td>
+          <td><input type="text" name="add_solution"></td>
+          <td><input type="text" name="replace_tank"></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+</ons-row>
+
+<div class="submit" align="center">
+    <ons-col align="center">
+    <input type="submit" value="Submit" class="subbut" id='' align="center">
+</ons-col>        
+</ons-col>  
+</div>
+</form>
+<form id='picklinglab'>
+    <div class="report"><h4>2. Pickling Solution</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+           <tr>
+             <th>Tank Number</th>
+             <th>Ambient Temperature (C)</th>
+             <th>Specific Gravity (1.100 - 1.220)</th>
+             <th>HCl Concentration (5-15%)</th>
+             <th>Iron Content (g/l) Max:120</th>
+             <th>Add Solution</th>
+             <th>Replace Tank</th>
+         </tr>
+     </thead>
+     <tbody>
+        <tr id="1">
+          <td><input type="text" name="" placeholder="2"></td>
+          <input type="hidden" name="tank_no[]" value="2">
+          <input type="hidden" name="stage[]" value="pck">
+          <td><input type="text" name="temp[]"></td>
+          <td><input type="text" name="specific_gravity[]"></td>
+          <td><input type="text" name="hcl_concentration[]"></td>
+          <td><input type="text" name="iron_concentration[]"></td>
+          <td><input type="text" name="add_solution[]"></td>
+          <td><input type="text" name="replace_tank[]"></td>
+      </tr>
+      <tr id="2">
+       <td><input type="text" name="" placeholder="3"></td>
+       <input type="hidden" name="tank_no[]" value="3">
+       <input type="hidden" name="stage[]" value="pck">
+       <td><input type="text" name="temp[]"></td>
+       <td><input type="text" name="specific_gravity[]"></td>
+       <td><input type="text" name="hcl_concentration[]"></td>
+       <td><input type="text" name="iron_concentration[]"></td>
+       <td><input type="text" name="add_solution[]"></td>
+       <td><input type="text" name="replace_tank[]"></td>
+   </tr>
+   <tr id="3">
+       <td><input type="text" name="" placeholder="4"></td>
+       <input type="hidden" name="tank_no[]" value="4">
+       <input type="hidden" name="stage[]" value="pck">
+       <td><input type="text" name="temp[]"></td>
+       <td><input type="text" name="specific_gravity[]"></td>
+       <td><input type="text" name="hcl_concentration[]"></td>
+       <td><input type="text" name="iron_concentration[]"></td>
+       <td><input type="text" name="add_solution[]"></td>
+       <td><input type="text" name="replace_tank[]"></td>
+   </tr>
+   <tr id="4">
+       <td><input type="text" name="" placeholder="5"></td>
+       <input type="hidden" name="tank_no[]" value="5">
+       <input type="hidden" name="stage[]" value="pck">
+       <td><input type="text" name="temp[]"></td>
+       <td><input type="text" name="specific_gravity[]"></td>
+       <td><input type="text" name="hcl_concentration[]"></td>
+       <td><input type="text" name="iron_concentration[]"></td>
+       <td><input type="text" name="add_solution[]"></td>
+       <td><input type="text" name="replace_tank[]"></td>
+   </tr>
+   <tr id="5">
+       <td><input type="text" name="" placeholder="6"></td>
+       <input type="hidden" name="tank_no[]" value="6">
+       <input type="hidden" name="stage[]" value="pck">
+       <td><input type="text" name="temp[]"></td>
+       <td><input type="text" name="specific_gravity[]"></td>
+       <td><input type="text" name="hcl_concentration[]"></td>
+       <td><input type="text" name="iron_concentration[]"></td>
+       <td><input type="text" name="add_solution[]"></td>
+       <td><input type="text" name="replace_tank[]"></td>
+   </tr>
+</tbody>
+</table>
+</div>
+</ons-row>
+<div class="submit" align="center">
+    <ons-col align="center">
+    <input type="submit" value="Submit" class="subbut" id='' align="center">
+
+</ons-col>  
+</div>
+</form>
+<ons-row>
+<form id='rinsinglab'>
+    <div class="report"><h4>3. Rinsing Solution</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+           <tr>
+             <th>Tank Number</th>
+             <th>Ambient Temperature (C)</th>
+             <th>Ph 2-6</th>        			
+             <th>Add Water</th>
+             <th>Replace Tank</th>
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="7"></td>
+          <input type="hidden" name="tank_no[]" value="7">
+          <input type="hidden" name="stage[]" value="rns">
+          <td><input type="text" name="temp[]"></td>
+          <td><input type="text" name="ph[]"></td>
+          <td><input type="text" name="add_water[]"></td>
+          <td><input type="text" name="replace_tank[]"></td>
+      </tr>
+      <tr>
+       <td><input type="text" name="" placeholder="8"></td>
+       <input type="hidden" name="tank_no[]" value="8">
+       <input type="hidden" name="stage[]" value="rns">
+       <td><input type="text" name="temp[]"></td>
+       <td><input type="text" name="ph[]"></td>
+       <td><input type="text" name="add_water[]"></td>
+       <td><input type="text" name="replace_tank[]"></td>
+   </tr>
+</tbody>
+</table>
+</div>
+</ons-row>
+<div class="submit" align="center">
+    <ons-col align="center">
+    <input type="submit" value="Submit" class="subbut" id='' align="center">
+
+</ons-col>
+</form>  
+</div>
+<ons-row>
+<form id='prefluxlab'>
+    <div class="report"><h4>4. Pre-Flux Solution</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+           <tr>
+             <th>Tank Number</th>
+             <th>Ph 3.5-5</th>
+             <th>Specific Gravity (1.100-1.150)</th>
+             <th>Zinc Ammonium Chloride Content</th>
+             <th>Iron Content</th>
+             <th>Add Solution</th>
+             <th>Replace Tank</th>
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="9"></td>
+         <input type="hidden" value="9" name="tank_no">
+         <input type="hidden" name="stage" value="flx">
+          <td><input type="text" name="ph"></td>
+          <td><input type="text" name="specific_gravity"></td>
+          <td><input type="text" name="zinc_ammonium_chloride_content"></td>
+          <td><input type="text" name="iron_concentration"></td>
+          <td><input type="text" name="add_solution"></td>
+          <td><input type="text" name="replace_tank"></td>
+
+      </tr>
+  </tbody>
+</table>
+</div>
+
+</ons-row>
+<div class="submit" align="center">
+    
+    <input type="submit" value="Submit" class="subbut" id='' align="center">
+
+
+
+</div>
+</form>
+
+<ons-row>
+<form id='hotplatelab'>
+
+
+    <div class="report"><h4>5. Hot Plate</h4></div>
+    
+<!--<div>
+<ons-row>
+<ons-col>Tank Number</ons-col>
+<ons-col>Temperature (About 120C)</ons-col>
+</ons-row>
+<ons-row>
+    <ons-col><input type="text" name="" placeholder="10"></ons-col>
+	<ons-col><input type="text" name="temp"></ons-col>
+</ons-row>
+<ons-row>
+    <ons-col><input type="hidden" value="10" name="tank_no"></ons-col>
+    <ons-col><input type="hidden" name="stage" value="dry"></ons-col>
+</ons-row>
+<div>
+    <ons-row>
+		<ons-col><input type="submit" value="Submit" class="subbut" id='' align="center"></ons-col>
+	</ons-row>
+</div>-->
+
+    <table class="report">
+        <thead>
+            <tr>
+             <th>Tank Number</th>
+             <th>Temperature (About 120C)</th>        		
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="10"></td>
+           <input type="hidden" value="10" name="tank_no">
+           <input type="hidden" name="stage" value="dry">
+          <td><input type="text" name="temp"></td>            		
+      </tr>
+  </tbody>
+</table>
+</ons-row>
+</div>
+
+<div class="space-2" align="center">
+<ons-row>
+    <ons-col>
+        <input type="submit" value="Submit" class="subbut" id='' align="center">
+    </ons-col>
+</ons-row>
+</div>
+</form>  
+
+<ons-row>
+<form id='zinctablab'>
+    <div class="report"><h4>6. Zinc Tank</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+            <tr>
+              <th>Tank Number</th>
+              <th>Temperature (Above 440C - 460C)</th>        		
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="11"></td>
+          <input type="hidden" value="11" name="tank_no">
+          <input type="hidden" name="stage" value="glv">
+          <td><input type="text" name="temp"></td>            		
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+<div class="space-2" align="center">
+<ons-row>
+    <ons-col>
+        <input type="submit" value="Submit" class="subbut" id='' align="center">
+    </ons-col>
+</ons-row>
+</div> 
+</form> 
+
+<ons-row>
+<form id='quenchinglab'>
+    <div class="report"><h4>7. Quenching</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+            <tr>
+              <th>Tank Number</th>
+              <th>Ph (5-6)</th> 
+              <th>TDS Max (100 PPM)</th>
+              <th>Add Water</th>
+              <th>Replace Tank</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="12"></td>
+          <input type="hidden" value="12" name="tank_no">
+          <input type="hidden" name="stage" value="que">
+          <td><input type="text" name="ph"></td>
+          <td><input type="text" name="tds_maximum"></td>   
+          <td><input type="text" name="add_water"></td>   
+          <td><input type="text" name="replace_tank"></td>   
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+<div class="space-2" align="center">
+<ons-row>
+    <ons-col>
+        <input type="submit" value="Submit" class="subbut" id='' align="center">
+    </ons-col>
+</ons-row>
+</div> 
+</form> 
+</div>
+<ons-row>
+<form id='dichromatinglab'>
+    <div class="report"><h4>8. Dichromating</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+            <tr>
+               <th>Tank Number</th>
+               <th>Ph (3-7)</th> 
+               <th>Temperature (Max: 65C)</th> 
+               <th>Chromate Content (Max: 1%)</th>
+               <th>Add Solution</th>
+               <th>Replace Tank</th>
+           </tr>
+       </thead>
+       <tbody>
+        <tr>
+          <td><input type="text" name="" placeholder="13"></td>
+           <input type="hidden" value="13" name="tank_no">
+           <input type="hidden" name="stage" value="pas">
+          <td><input type="text" name="ph"></td>
+          <td><input type="text" name="temp"></td>   
+          <td><input type="text" name="chromate_content"></td>   
+          <td><input type="text" name="add_solution"></td>   
+          <td><input type="text" name="replace_tank"></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+
+<br>
+
+<div class="submit" align="center">
+    <ons-col align="center">
+    <input type="submit" value="Submit" class="subbut" id='' align="center">
+
+</ons-col> 
+</form>
+</div>
+
+</br>
+
+</form>
+</ons-page>
+</body>
+</html>

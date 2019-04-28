@@ -1,0 +1,63 @@
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Galvanization</div>
+    </ons-toolbar>
+    
+    <ons-page>
+     <div id="gal_plan" ></div>
+ <form id="galvanizing" action="">
+ <div align="center" class="space-15">
+
+    <ons-row>
+
+    <ons-col>
+            <select id="galjobcode" name="galjobcode" class="small_sel" required>
+                <option value="">Job code</option>
+            </select>
+        </ons-col>
+        <ons-col>
+            <select id="pid" name="process_id" class="small_sel" required>
+                <option value="">Jig</option>
+            </select>
+        </ons-col>
+    	<ons-col>
+            <select id="facility_gal" name="facility" class="small_sel" required>
+                <option value="">Select Tank</option>
+                <option value="11">01</option>
+              </select>
+        </ons-col>
+         <ons-col>
+        <input type="text" class="galtext" name="galtemp" placeholder="Temperature">
+                    </ons-col>
+        </ons-row>
+<div align="center"> <br><br>
+                <ons-row>
+                    <ons-col>
+                        <input type="button" class="button btn_camera" value="Take picture">
+                    </ons-col>
+                    <ons-col>
+                        <input type="submit" value="Submit" class="subbut">
+                    </ons-col>
+                </ons-row>
+            
+            <div class="space-5">
+                <ons-row>
+                	<ons-col>
+                        <div id="gal_status" class="mardiv">
+                              
+                        </div>
+                	   <div id='gal_img' class="camimages"></div>
+                       <input type="hidden" value="" class="imagehidden" name="image">
+            		</ons-col>
+            	</ons-row>
+            </div>
+    </div>
+    </form>
+
+    </div>
+    </ons-page>
+
+

@@ -1,0 +1,43 @@
+<ons-page>
+   <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Vehicle Out</div>
+    </ons-toolbar>
+<body>
+<form id="vehicleOut" action="">
+<div class="space-10" align="center">
+    <ons-row>
+    <ons-col>
+        <select id="vehicle_regno" name="job_code" class="big_sel">
+            <option value="">Select Vehicle Reg No.</option>
+            <option value="1">TN-10-7654</option>
+            <option value="2">TN-09-8743</option>
+            <option value="3">TN-10-8768</option>
+            <option value="4">KA-07-4357</option> 
+        </select>
+    </ons-col>
+    </ons-row>
+    </div>
+    <div class="space-5" align="center">
+    <br>
+    <ons-row>        
+        <ons-col align="center">
+            Weighbridge Unloaded Weight: <input type="number" name="wb_weight" required>
+        </ons-col>
+    </ons-row>
+    
+    <br> <br>
+    <div align="center">
+    <ons-row>
+         <ons-col align="center">
+            <input type="submit" value="Submit" class="subbut">
+        </ons-col> 
+        
+    </ons-row>
+    </div>
+    </div>
+    </form>
+</body>
+</ons-page>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+	<ons-page>
+
+    <ons-toolbar>
+    <div class="left">
+        <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+    </div>
+    <div class="center">Recovery Log</div>
+</ons-toolbar>   
+
+<form action="" id="recoveryloginsert">
+    <ons-row>
+    <ons-col>
+    <select id="jobcodepopulate" name="job_code" class="big_sel">
+
+    </select>
+</ons-col>
+<ons-col>
+<input type="hidden" value='2' name="shift" placeholder="Shift">   
+</ons-col>
+</ons-row>
+<ons-row>
+<ons-col><input type="text" name="qty" id="" placeholder="Quantity"></ons-col>
+<ons-col><input type="text" name="required_coating" id="" placeholder="Required Coating"></ons-col>
+</ons-row>
+<br>
+<div class="space-2" align="center">
+    <ons-row>
+    <ons-col><b>Microns Reading</b></ons-col>
+</ons-row>
+</div>
+<ons-row>
+<table>
+    <tbody>
+        <tr>
+          <td><input type="text" id="" class="micr" placeholder="1"></td>
+          <td><input type="text" id="" class="micr" placeholder="2"></td>
+          <td><input type="text" id="" class="micr" placeholder="3"></td>
+          <td><input type="text" id="" class="micr" placeholder="4"></td>
+          <td><input type="text" id="" class="micr" placeholder="5"></td>
+          <td><input type="text" id="" class="micr" placeholder="6"></td>
+          <td><input type="text" id="" class="micr" placeholder="7"></td>
+          <td><input type="text" id="" class="micr" placeholder="8"></td>
+          <td><input type="text" id="" class="micr" placeholder="9"></td>
+          <td><input type="text" id="" class="micr" placeholder="10"></td>
+      </tr>                    
+  </tbody>
+</table>
+</ons-row>
+<ons-row>
+<ons-col><textarea name="remarks" id="" placeholder="Remarks" class="notes"></textarea></ons-col>
+</ons-row>
+<div align="center" class="space-2">
+    <ons-row>
+    <ons-col><input type="text" name="recovery_supervisor" id="" placeholder="Recovery Supervisor"></ons-col>
+    <ons-col><input type="text" name="shift_incharge" id="" placeholder="Shift Incharge"></ons-col>
+    <ons-col><input type="text" name=" quality_incharge" id="" placeholder="Quality Incharge"></ons-col>
+    <ons-col><input type="text" name="work_manager" id="" placeholder="Works Manager"></ons-col>
+</ons-row>
+</div>
+<ons-row>
+<ons-col>
+    <input type="button" class="button btn_camera" value="Take picture">
+</ons-col>
+<ons-col>
+<input type="submit" value="Submit" class="subbut">
+</ons-col>
+<ons-col>
+<input type="reset" value="Reset" class="subbut">
+</ons-col>
+</ons-row>
+<div class="space-5">
+    <ons-row>
+    <ons-col>
+    <div id="gal_status" class="mardiv">
+
+    </div>
+    <div id='gal_img' class="camimages"></div>
+    <input type="hidden" value="" class="imagehidden" name="image">
+</ons-col>
+</ons-row>
+</div>
+
+</form>
+
+</ons-page>
+</body>
+</html>

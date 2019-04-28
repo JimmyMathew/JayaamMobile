@@ -1,0 +1,61 @@
+<ons-page>        
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Binding</div>
+    </ons-toolbar>
+
+    <body>
+        <form id="binding" action="">
+            <div class="space-10">
+                <ons-row>
+            		<ons-col>
+                    <select id="job_code" name="job_code" class="small_sel" required>
+                        <option value="">Job Code</option>
+                                            </select>
+                    </ons-col>
+                    <ons-col>
+                    <select id="lot_no" name="lot_no" class="small_sel" required>
+                        <option value="">Lot No</option>
+                       
+                    </select>
+                    </ons-col>
+                    <ons-col>
+                    <select id="fixture" name="fixture" class="small_sel" required>
+                        <option value="">Fixture</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                    </select>
+                    </ons-col>
+                    <ons-col>
+                    <select id="jig" name="facility" class="small_sel" required>
+                      <option value="">Jig</option>                                                              
+                    </select>
+                    </ons-col>
+                     <ons-col>
+                    <input type="text" class="bndtxt" name="bndquantity" placeholder="Quantity">
+                    </ons-col>
+            	</ons-row>
+            </div>
+            <div align="center"> <br><br>
+                <ons-row>
+                    <ons-col>
+                        <input type="button" class="button btn_camera" value="Take picture">
+                    </ons-col>
+                    <ons-col>
+                        <input type="submit" value="Submit" class="subbut">
+                    </ons-col>
+                </ons-row>
+            
+            <div class="space-5">
+                <ons-row>
+            		<ons-col>
+                	 <div id='gal_img' class="camimages"></div> 
+                     <input type="hidden" value="" class="imagehidden" name="image">
+            		</ons-col>
+            	</ons-row>
+            </div>
+        </form>
+</ons-page>

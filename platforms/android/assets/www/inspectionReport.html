@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inspection Report</title>
+</head>
+<body>
+  <ons-page>
+<form id="inspectform" action="">
+<ons-row class="row ons-row-inner">
+    <ons-col class="col ons-col-inner" width="10%"><img src="images/jayaam.jpg"/>
+    </ons-col>
+    <ons-col class="col ons-col-inner" width="60%">Jayaam Galvanizers Private Limited,<br/>
+Plot no.D-16(N-2)SIPCOT Industrial Estate<br/>
+Karumbukuppam Village,Gummunipoondi Tlk,<br/>
+Thiruvallur Dist,Chennai,Tamil Nadu,Pin 601201,<br/>
+Email: quality@jayaam.com<br/></ons-col>
+    <ons-col class="col ons-col-inner" width="30%"><h1>Inspection Report</h1></ons-col>
+  </ons-row><br/><hr>
+<ons-row class="row ons-row-inner">
+    <ons-col class="col ons-col-inner">Job code : 1<br>
+Supplier  : M/S <b><input type="text" name='supplierName' style="font-weight:bold" value="BALSARA ENGINEERING PRODUCTS LTD"></b><br/>
+Party DC No : BEPL/370<br/>
+Zinc Purity: 99.99%<br/>
+Description & Qty : As per Annexure</ons-col>
+    
+    <ons-col class="col ons-col-inner" width="20%">Date : 31.03.2016<br/>
+Std: <select name="std" id=""><option value="IS:2629-1985">IS:2629-1985</option></select><br/>
+Batch No: <input type="text" name='batchNo' style='height:15px !important;font-size:small;' value="JGPL/Gal/IR-008/2016"></ons-col>
+  </ons-row>
+  
+<hr>
+  
+    
+        <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Inspection Report</div>
+    </ons-toolbar>  
+    <ons-row>
+
+    <div class="report"><h4>1.PREECE TEST</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+          <tr>
+             <th>Sample No</th>
+             <th>Type of the Sample</th>
+             <th>No of one min.Dip</th>
+             <th>Remarks</th>
+            
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="pr_sampleNo" placeholder=""></td>
+         
+          <td><input type="text" name="pr_sample" placeholder=""></td>
+          <td><input type="text" name="pr_minDip" placeholder=""></td>
+          <td><input type="text" name="pr_remarks" placeholder=""></td>
+          
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+
+
+
+</ons-row>
+
+    <ons-row>
+
+    <div class="report"><h4>2.STRIPPING TEST &nbsp;&nbsp;&nbsp;IS:6745-1972</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+          <tr>
+           <td colspan="4"><b>Test sample size:</b> 100 </td>
+            <td colspan="5"><b>Test sample1:</b> 105X58X6mm</td>
+           </tr>
+           <tr>
+             <th>Type of the Sample</th>
+             <th>Thickness mm</th>
+             <th>Galvanized wt.gms</th>
+             <th>Black wt.gms</th>
+             <th>Area in mm</th>
+             <th>Coating wt.gms</th>
+             <th>Coatings gms/M<sup>2</sup></th>
+             <th>Microns</th>
+             <th>Remarks</th>
+            
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="str_sample" placeholder=""></td>
+          <td><input type="text" name="str_thickness" placeholder=""></td>
+          <td><input type="text" name="str_galvanizing" placeholder=""></td>
+          <td><input type="text" name="str_blackWt" placeholder=""></td>
+           <td><input type="text" name="str_area" placeholder=""></td>
+            <td><input type="text" name="str_coatingWt" placeholder=""></td>
+             <td><input type="text" name="str_coatingGms" placeholder=""></td>
+              <td><input type="text" name="str_microns" placeholder=""></td>
+               <td><input type="text" name="str_remarks" placeholder=""></td>
+          
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+
+
+
+</ons-row>
+ <ons-row>
+
+    <div class="report"><h4>3.HAMMER TEST/KNIFE TEST &nbsp;&nbsp;&nbsp;IS:2629-1985</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+          <tr>
+             <th>Type of the Sample</th>
+             <th>Location</th>
+             <th>Remarks</th>
+            
+            
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="ham_sample" placeholder=""></td>
+          <td><input type="text" name="ham_location" placeholder=""></td>
+          <td><input type="text" name="ham_remarks" placeholder=""></td>
+          
+          
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+
+
+</ons-row>
+ <ons-row>
+
+    <div class="report"><h4>4.ELCOMETER TEST</h4></div>
+</ons-row>
+<ons-row>
+<div>
+   <table class="report">
+        <thead>
+          <tr>
+             <th  rowspan="2">Type of the Sample</th>
+             <th colspan=7>Readings in Micron at Location</th>
+             <th rowspan="2">Remarks</th>
+          </tr>
+<tr><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th><th>f</th><th>g</th></tr>
+
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="elco_sample" placeholder=""></td>
+          <td><input type="text" name="elco_microns" placeholder=""></td>
+<td><input type="text"  class="insmicro" placeholder=""></td>
+<td><input type="text"  class="insmicro" placeholder=""></td>
+<td><input type="text"  class="insmicro" placeholder=""></td>
+<td><input type="text"  class="insmicro" placeholder=""></td>
+<td><input type="text"  class="insmicro" placeholder=""></td>
+<td><input type="text"  class="insmicro" placeholder=""></td>
+<td><input type="text" name="elco_remarks" class="insmicro" placeholder=""></td>
+          
+          
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+
+
+
+</ons-row>
+ <ons-row>
+
+    <div class="report"><h4>5.ANNEXURE</h4></div>
+</ons-row>
+<ons-row>
+<div>
+    <table class="report">
+        <thead>
+          <tr>
+             <th>SNo</th>
+             <th>Description</th>
+             <th>UOM</th>
+             
+             <th>Qty in No's</th>
+            
+            
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+          <td><input type="text" name="ann_no" placeholder=""></td>
+          <td><input type="text" name="ann_description" placeholder=""></td>
+          <td><input type="text" name="ann_uom" placeholder=""></td>
+          <td><input type="text" name="ann_quantity" placeholder=""></td>
+          
+          
+      </tr>
+  </tbody>
+</table>
+</div>
+</ons-row>
+
+
+</ons-row><br/><br/>
+<ons-row>
+<div style="float:left">
+<b>For Jayaam Galvanizers Private Limited</b><br/><br/><br/>
+Incharge of testing<br>
+Galvanizers
+</div>
+</ons-row>
+
+<div class="submit" align="center">
+    <ons-col align="center">
+    <input type="submit" value="Submit" class="subbut" id='' align="center">
+    <input type="button" value="Print" class="subbut" id='' align="center">
+</ons-col>        
+ 
+</div>
+</form>
+</body>
+</html>

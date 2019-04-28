@@ -1,0 +1,162 @@
+<ons-page style="background-color: white">
+
+    <ons-list>
+
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('vehiclein.html', {closeMenu: true});datetime();">         
+            Vehicle In
+        </ons-list-item>
+
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('unloading.html', {closeMenu: true}); vhno();">
+            Unloading
+        </ons-list-item>
+        
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('vehicleout.html', {closeMenu: true}); vhno();">
+            Vehicle Out 
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('binding.html', {closeMenu: true}); jobpopulate();">
+            Binding 
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('bindingapproval.html', {closeMenu: true});bindapprove();">
+            Binding Approval 
+        </ons-list-item>
+		<ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('degreasing.html', {closeMenu: true});dgrjigpopulate();">
+            Degreasing
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('degreasingapproval.html', {closeMenu: true});degreaseapprove();">
+            Degreasing Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('pickling.html', {closeMenu: true});pckjigpopulate();">
+            Pickling
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('picklingapproval.html', {closeMenu: true});pickleapprove();">
+            Pickling Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('rinsing.html', {closeMenu: true});rnsjigpopulate();">
+            Rinsing
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('rinsingapproval.html', {closeMenu: true});rinseapprove();">
+            Rinsing Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('fluxing.html', {closeMenu: true});flxjigpopulate();">
+            Fluxing
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('fluxingapproval.html', {closeMenu: true});fluxapprove();">
+            Fluxing Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('drying.html', {closeMenu: true});dryjigpopulate();">
+            Drying
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('dryingapproval.html', {closeMenu: true});dryapprove();">
+            Drying Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('galvanization.html', {closeMenu: true});glvjigpopulate();glvjobpopulate();">
+            Galvanization
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('galvanizationapproval.html', {closeMenu: true});galvanizeapprove();">
+            Galvanization Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('quenching.html', {closeMenu: true});quejigpopulate();">
+            Quenching
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('quenchingapproval.html', {closeMenu: true});quenchapprove();">
+            Quenching Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('passivation.html', {closeMenu: true});pasjigpopulate();">
+            Passivation
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('passivationapproval.html', {closeMenu: true});passiveapprove();">
+            Passivation Approval
+        </ons-list-item>
+		 <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('labreport.html', {closeMenu: true});">
+            Lab Report
+        </ons-list-item>
+		 <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('recoverylog.html', {closeMenu: true});recoveryjobpopulate();">
+            Recovery Log
+        </ons-list-item>
+         <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('unbinding.html', {closeMenu: true});unbindingjigpopulate();">
+            Unbinding
+        </ons-list-item>
+         <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('unbindingapproval.html', {closeMenu: true});unbindingapprove();">
+            Unbinding Approval
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('cleaning.html', {closeMenu: true});cleaningjigpopulate();">
+            Cleaning
+        </ons-list-item>
+         <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('cleaningapproval.html', {closeMenu: true});cleaningapprove();">
+            Cleaning Approval
+        </ons-list-item>
+		<ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('inspectionReport.html', {closeMenu: true});">
+            Inspection Report
+        </ons-list-item>
+
+<ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('processplanner.html', {closeMenu: true});processjobpopulate();">
+            Process Planner
+        </ons-list-item>
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('uploading.html', {closeMenu: true}); vhno();uploadjobpopulate();">
+           Uploading
+        </ons-list-item>
+
+
+    </ons-list>
+
+</ons-page>

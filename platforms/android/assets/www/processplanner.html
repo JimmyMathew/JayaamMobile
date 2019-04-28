@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Process Planner</div>
+    </ons-toolbar>
+</head>
+<body>
+	<form href=''# id='process_planner'>
+    <div align="center" class="space-10">
+    
+    	<ons-row>
+			<ons-col>
+    		<select id="ppjob" name="job_code" class="big_sel">
+            <option>Job Code</option>            
+            </select>   
+			</ons-col>
+			<ons-col>
+                Party name: <span id="process_party_name"></span>
+            </ons-col>
+		</ons-row>
+        <ons-row>
+            <ons-col><input type="text" name="microns_required" placeholder="Microns Requirement"></ons-col>
+        	<ons-col><input type="text" name="suggested_dip_time" placeholder="Suggested Diptime"></ons-col>
+        </ons-row>        
+    </div>
+
+    <div class="space-2" align="center">
+        <ons-row>
+    		<ons-col><input type="submit" value="Submit" class="subbut"></ons-col>
+    	</ons-row>
+    </div>
+    </form>
+</body>
+</html>

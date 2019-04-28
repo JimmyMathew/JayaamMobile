@@ -1,0 +1,61 @@
+<ons-navigator>
+   <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center">Vehicle In</div>
+        </ons-toolbar>
+        <form id="vehiclein">
+        <div style="text-align: center">
+            
+              <p></p>
+                <ons-row align="center">
+                    
+                    <ons-col>Vehicle In-Time : </ons-col>
+                    <ons-col><input type="text" class="text-input" id="vehicle_in" name="vehicle_in" placeholder="" value=" " required></ons-col>
+                    <ons-col>Vehicle Reg No : &nbsp; &nbsp;</ons-col>
+                    <ons-col><input type="text" class="text-input" placeholder="" name="vehicle_regno" value="" required></ons-col>
+                    <ons-col width="10%"></ons-col>
+                </ons-row>
+                <p></p>
+                <ons-row align="center">
+                    <ons-col>Party Name : </ons-col>
+                    <ons-col><input type="text" class="text-input" placeholder="" name="party_name" value="" required></ons-col>
+                    <ons-col>Party Dc Ref/Date :</ons-col>
+                    <ons-col>
+                        <input type="text" class="text-input split" placeholder="" name="party_dc" value="" required>
+                        <input type="date" class="text-input split" ng-model="inputDate" name="dc_date" placeholder="" value="" required>
+                    </ons-col>
+                    <ons-col width="10%"></ons-col>
+                </ons-row>
+                <p></p>
+                <ons-row>
+                    <ons-col>Units as per DC :</ons-col>
+                    <ons-col>
+                    <input type="number" class="text-input split" placeholder="" name="dc_weight" valname="dc_weight" ue="" required>
+                    <select class="text-input split" id="units" name="units" value="required">
+                        <option value="null">Units</option>
+                        <option value="kg">kg</option>
+                        <option value="tons">tons</option>
+                        <option value="nos">nos</option>
+                    </select> 
+                    </ons-col>
+
+                    <ons-col><label>WB Loaded Weight : </label></ons-col>
+                    <ons-col><input type="number" class="text-input" placeholder="" name="wbl_weight" value="" required></ons-col>
+                     <ons-col width="10%"></ons-col>
+                </ons-row>
+                <p></p>
+                <ons-row>
+                    <ons-col>
+                       <!--  <ons-button modifier="material" class="subbut" type="submit" id="vhin">
+                            Submit
+                        </ons-button> -->
+                        <input type="submit" value="Submit" class="subbut">
+                    </ons-col>
+                </ons-row>
+        </div>
+        </form>
+    </ons-page>
+</ons-navigator>

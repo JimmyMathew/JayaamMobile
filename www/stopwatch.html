@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+
+input {
+    padding:4px;}
+
+input[type="text"] {
+    width:50px;
+    text-align:center;}    
+
+div {
+    font-family:Arial,Verdana;
+    font-size:12px;
+    width:360px;
+    background-color:#f2f2f2;
+    padding:16px;
+    border:solid 1px #e5e5e5;
+    text-align:center;
+    margin:0 0 16px 0;}
+
+div span:last-child {
+color:green;}
+
+h1 {
+    font-size:14px;
+    margin:0 0 8px 0;
+}
+ 
+</style>
+</head>
+<div>
+    <h1>Stopwatch</h1>
+    <span id="sw_h">00</span>:
+    <span id="sw_m">00</span>:
+    <span id="sw_s">00</span>:
+    <span id="sw_ms">00</span>
+    <br/>
+    <br/>
+    <input type="button" value="Start" id="sw_start" />
+    <input type="button" value="Pause" id="sw_pause" />
+    <input type="button" value="Stop"  id="sw_stop" />
+    <input type="button" value="Reset" id="sw_reset" />
+    <br/>
+    <br/>
+    <span id="sw_status">Idle</span>
+</div>
+<script type="text/javascript" src="components/jquery.min.js"></script>
+<script type="text/javascript" src="components/stopwatch.js"></script>
+</html>

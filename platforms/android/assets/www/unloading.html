@@ -1,0 +1,93 @@
+<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Unloading</div>
+    </ons-toolbar>
+    <form id="unloading">
+    <div>
+    <ons-row align="center">
+    <ons-col>
+    <input type="hidden" value="" id="unload_job" name="job_code">
+        <select id="vehicle_regno" name="vehicle_regno" class="big_sel" required>
+            <option value="">Select Vehicle Reg No.</option>
+            <option value="1">TN-10-7654</option>
+            <option value="2">TN-09-8743</option>
+            <option value="3">TN-10-8768</option>
+            <option value="4">KA-07-4357</option> 
+        </select>
+    </ons-col>
+    <input type="hidden" name="material_status" value="unloading">
+        <ons-col align="right">
+         Job Code: <span id="job_code"></span>
+        </ons-col>
+    </ons-row>
+    </div>
+    <div class="table">
+        <table id="unloading_table" class="table">
+            <thead>
+                <tr>
+                    <th>Material </th>
+                    <th>Material Structure/Type</th>
+                    <th>Material Description</th>
+                    <th>Quantity</th>
+                    <th>Lot No</th>
+                    <th>Rejected</th>
+                    <th>Accepted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="material_type[]"></td>
+                    <td><input type="text" name="material_structure[]"></td>
+                    <td><input type="text" name="material_dimension[]"></td>
+                    <td><input type="number" class="qty" name="quantity[]"></td>
+                    <td><input type="number" name="lot_no[]"></td>
+                    <td><input type="number" class="rej" name="rejected[]"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                   <td><input type="text" name="material_type[]"></td>
+                    <td><input type="text" name="material_structure[]"></td>
+                    <td><input type="text" name="material_dimension[]"></td>
+                    <td><input type="number" class="qty" name="quantity[]"></td>
+                    <td><input type="number" name="lot_no[]"></td>
+                    <td><input type="number" class="rej" name="rejected[]"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                <td><input type="text" name="material_type[]"></td> <td><input type="text" name="material_structure[]"></td> <td><input type="text" name="material_dimension[]"></td>
+                    <td><input type="number" class="qty" name="quantity[]"></td>
+                    <td><input type="number" name="lot_no[]"></td>
+                    <td><input type="number" class="rej" name="rejected[]"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div align="center">
+    <br>
+    <ons-row>
+            <ons-col>
+                <!--<ons-button modifier="material" class="button" id='addItem'>
+                    Add Item
+                </ons-button>-->
+                <input type="button" value="Add Item" class="subbut" id="addItem">
+            </ons-col>
+    </ons-row>
+    </div>
+        <br>
+        <textarea name="notes" placeholder="Notes..." class="notes" required></textarea>
+    </div>
+    <div align="center">
+    <br>
+    <ons-row>
+            <ons-col>               
+                <input type="submit" value="Submit" class="subbut">
+                <input type="reset" value="Reset" class="subbut">
+            </ons-col>
+    </ons-row>
+    </div>
+    </form>
+</ons-page>
